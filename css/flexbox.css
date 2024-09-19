@@ -1,0 +1,17 @@
+.cabecera__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cabecera__buscar__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecera__buscar--elemnento{
+    display: flex;
+    align-items: center;
+}
