@@ -1,8 +1,9 @@
+/* Cabecera */
+
 .cabecera__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .cabecera__buscar__item {
@@ -11,7 +12,52 @@
     gap: 10px;
 }
 
-.cabecera__buscar--elemnento{
+.cabecera__buscar--elemnento {
     display: flex;
     align-items: center;
+}
+
+/* MENU LATERAL */
+
+.menu__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 17px 20px 15px;
+}
+
+.menu__itens {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* SECCIÓN SUPERIOR */
+
+.superior__seccion__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    /* propiedad para que el texto no se quiebre */
+    gap: 10px;
+}
+
+/* Footer RODAPIÉ */
+
+.rodapie__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 834px) {
+
+
+}
+
+@media (max-width: 600px) {
+
+    
+
+
 }

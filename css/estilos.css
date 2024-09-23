@@ -15,7 +15,6 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     font-size: 14px;
     color: white;
     box-sizing: border-box;
@@ -28,6 +27,8 @@ body {
     background-color: white;
     height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
     padding: 0 25px;
 }
 
@@ -60,7 +61,7 @@ body {
 
 .cabecera__audio {
     background-image: url(../img/cabecera/mic.png);
-    padding: 20px; 
+    padding: 20px;
 }
 
 .cabecera__videos {
@@ -97,6 +98,16 @@ body {
 .menu__container {
     background-color: var(--azul-oscuro);
     font-size: 14px;
+    width: 239px;
+    height: auto;
+    overflow: scroll;
+    top: 80px;
+    left: 0;
+    position: fixed;
+}
+
+.menu__lista {
+    border-bottom: 1.5px solid var(--azul-medio);
 }
 
 .menu__itens:hover {
@@ -183,25 +194,28 @@ body {
 /* SECCIÓN SUPERIOR */
 
 .superior__seccion__container {
-    height: 63px;
+    height: 64px;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     background-color: var(--azul-claro);
     padding: 0 20px;
     position: fixed;
     top: 80px;
     right: 0;
-    left: 0;
+    left: 239px;
+    border-top: var(--azul-medio) 1px solid;
+    border-bottom: var(--azul-medio) 1px solid;
 }
 
 .superior__item {
     color: var(--gris-texto);
-    font-size: 16px;
+    font-size: 12px;
     background-color: white;
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 15px;
     cursor: pointer;
 }
+
 
 .superior__item:hover {
     color: white;
@@ -233,15 +247,20 @@ body {
     color: #444444;
 }
 
-/* RODAPIÉ */
+/* Footer RODAPIÉ */
 
 .rodapie__container {
-    width: 100%;
-    height: 875px;
+    height: auto;
     color: var(--gris-texto);
     line-height: 1.5;
     font-size: 16px;
     background-color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 239px;
+    text-align: left;
 }
 
 .rodapie__titulo {
@@ -250,81 +269,17 @@ body {
     padding: 10px 0 20px 0;
 }
 
-@media(min-width: 834px) {
+@media(max-width: 834px) {
 
-    body {
-        height: 100vh;
-    }
+   
 
-    /* ESTILOS DO MENU LATERAL */
 
-    .menu__container {
-        font-size: 14px;
-    }
 
-    .menu__lista {
-        padding-top: 15px;
-    }
-
-    .menu__lista li {
-        width: 100%;
-    }
-
-    /* ESTILOS DE LA SECCIÓN SUPERIOR */
-
-    .superior__seccion__container {
-        border-top: var(--azul-medio) 1px solid;
-        border-bottom: var(--azul-medio) 1px solid;
-        width: auto;
-        left: 82px;
-    }
-
-    /*ESTILOS DE LA SECCIÓN VÍDEOS */
-
-    .videos__container {
-        padding-left: 90px;
-        padding-right: 17px;
-    }
-
-    .videos__item:hover {
-        transform: scale(1.3);
-    }
-
-    /* ESTILOS RODAPIÉ */
-
-    .rodapie__container {
-        height: 420px;
-        padding-left: 74px;
-    }
 
 }
 
-@media(min-width: 1440px) {
+@media(max-width: 600px) {
 
-    /* SECCIÓN SUPERIOR */
-
-    .superior__seccion__container {
-        left: 247px;
-    }
-
-    /* ESTILOS DEL MENU LATERAL */
-
-    .menu__lista {
-        border-bottom: 1.5px solid var(--azul-medio);
-    }
-
-    /* ESTILOS VIDEOS */
-
-    .videos__container {
-        padding-right: 10px;
-        padding-left: 248px;
-    }
-
-    /* ESTILOS RODAPIÉ */
-
-    .rodapie__container {
-        padding-left: 240px;
-        height: 225px;
-    }
+   
 
 }
