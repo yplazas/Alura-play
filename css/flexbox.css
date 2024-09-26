@@ -26,6 +26,10 @@
     padding: 20px 17px 20px 15px;
 }
 
+.menu__lista:nth-child(9){
+    order: 1;
+}
+
 .menu__itens {
     display: flex;
     align-items: center;
@@ -41,6 +45,29 @@
     white-space: nowrap;
     /* propiedad para que el texto no se quiebre */
     gap: 10px;
+}
+
+.videos__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.videos__item {
+    flex-grow: 1;
+}
+
+.descripcion-video {
+    margin-top: 1rem;
+    display: flex;
+    align-items: start;  
+}
+
+.descripcion-video img {
+    margin-right: 1rem; 
+    flex-shrink: 0;  /*  Evita que la imagen se reduzca */
 }
 
 /* Footer RODAPIÉ */
