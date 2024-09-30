@@ -40,8 +40,8 @@ body {
 }
 
 .buscar__input {
-    width: 260px;
-    height: 32px;
+    width: 350px;
+    height: 40px;
     border: 1px solid rgb(211, 211, 211);
     font-size: 16px;
     padding: 3px 8px;
@@ -55,7 +55,7 @@ body {
     border: 1px solid rgb(211, 211, 211);
     background-color: #F9F9F9;
     border-left: none;
-    padding: 15px;
+    padding: 19px;
     cursor: pointer;
 }
 
@@ -105,10 +105,12 @@ body {
     left: 0;
     bottom: 0;
     position: fixed;
+    z-index: 1;
 }
 
 .menu__lista {
     border-bottom: 1.5px solid var(--azul-medio);
+    padding: 20px 17px 20px 15px;
 }
 
 .menu__itens:hover {
@@ -118,22 +120,18 @@ body {
 
 .videojuegos {
     order: 4;
-
 }
 
-.peliculas{
+.peliculas {
     order: 3;
-
 }
 
-.premium{
+.premium {
     order: 2;
-
 }
 
 .maspagina {
     order: 1;
-
 }
 
 .icono__inicio::before {
@@ -248,7 +246,7 @@ body {
 
 .videos__container {
     color: black;
-    padding: 153px 20px 0 259px;
+    padding: 173px 20px 0 259px;
     margin-bottom: 268px;
 }
 
@@ -267,7 +265,7 @@ body {
 
 
 .detalles__video {
-    text-align:left;
+    text-align: left;
 
 }
 
@@ -296,6 +294,7 @@ body {
     right: 0;
     left: 239px;
     text-align: left;
+    white-space: nowrap;
 }
 
 .rodapie__titulo {
@@ -304,17 +303,105 @@ body {
     padding: 10px 0 20px 0;
 }
 
-@media(max-width: 834px) {
+.rodapie__item {
+    height: auto;
+}
 
-   
 
+@media (max-width: 1546px) {
 
-
+    .superior__seccion__container {
+        overflow-x: scroll;
+    }
 
 }
 
-@media(max-width: 600px) {
+@media (max-width: 1200px) {
 
-   
+    .videos__container {
+        margin-bottom: 70px;
+    }
+
+
+    .rodapie__container {
+        left: 0;
+        font-size: 14px;
+        padding: 20px 20px 20px 259px;
+        position: relative;
+    }
+
+}
+
+@media(max-width: 834px) {
+
+    .cabecera__avatar {
+        margin-left: 0;
+    }
+
+    .buscar__input {
+        width: 210px;
+    }
+
+    .superior__seccion__container {
+        left: 87px;
+    }
+
+    .menu__container {
+        width: 87px;
+        overflow: hidden;
+    }
+
+    .menu__lista {
+        border-bottom: 0;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: none;
+    }
+
+    .videos__container {
+        padding: 173px 40px 0 127px;
+    }
+
+    .rodapie__container {
+        padding: 20px 40px 20px 127px;
+    }
+
+    .rodapie__item {
+        height: auto;
+    }
+
+}
+
+@media(max-width: 440px) {
+
+    .menu__container{
+        width: 100%;
+        height: 87px;
+        top: auto;
+    }
+    .menu__lista{
+        padding: 20px;
+    }
+
+    .menu__itens span{
+        font-size: 12px;
+    }
+
+    .superior__seccion__container{
+        left: 0;
+    }
+
+    .videos__container{
+        margin-bottom: 50px;
+        padding: 173px 40px 0;
+    }
+
+    .rodapie__container{
+        margin-bottom: 87px;
+        padding: 20px 0 20px 60px;
+    }
 
 }
